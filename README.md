@@ -1,2 +1,0 @@
-# Eduford_campus
-# Yelp
