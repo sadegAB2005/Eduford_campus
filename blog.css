@@ -13,7 +13,7 @@ h2{
 {
     min-height: 65vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/eduford_img/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/background.jpg);
     background-position: center;
     position: relative;
 }
@@ -152,79 +152,155 @@ nav .fa
 {
     padding: 30px;
 }
+
+
+
 }
+/*------category (cat)------*/
 
-
-/*------map------*/
-.map
-{
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-}
-iframe {
-    width: 88%;
-    max-width: 1200px; /* Set a maximum width if needed */
-    height: 450px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(211, 139, 139, 0.1);
-}
-
-
-
-
-/*-------form-------*/
-.container {
+.cat {
     width: 80%;
-    max-width: 1200;
-    margin: 0 auto;
-    padding: 20px;
-    
-    border-radius: 5px;
-}
-
-.contact-row {
-    display: flex;
-}
-
-.contact-info,
-.contact-form {
-    width: 50%;
-}
-
-.contact-info h2,
-.contact-form h2 {
+    margin: auto;
     text-align: center;
+    padding-top: 100px;
 }
 
-.info {
-    margin-bottom: 20px;
+.row {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.icon {
-    margin-right: 10px;
+.cat-col {
+    flex-basis: 100%; /* Adjust this value as needed */
+    
+    text-align: left;
+    overflow: hidden;
+    display: flex; /* Add this line to enable flex display */
+    align-items: left; /* Add this line to vertically center the content */
+}
+
+.cat-col img {
+    width: 700px; /* Adjust this value as needed */
+    height: auto;
+    border-radius: 5px;
+
+}
+
+.cat-col table {
+    flex: 1;
+    margin-left: 40px; /* Adjust this value as needed */
+    text-align: left;
+    max-height: 300px;
+}
+
+table {
+    
+    width: 100%;
+}
+
+th {
+    background-color: #f44336;
+    text-align: center;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 9px;
+    border-bottom: 1px solid #ebe9e9;
+    
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+.td2{
+    text-align: right;
+}
+tr{
+    color: rgb(90, 83, 83);
+}
+.cat-col1{
+    text-align: left;
+    width: 65%;
+    padding: 10px;
+    margin: 5px;
+}
+.cat-col1 p{
+    color: rgb(90, 83, 83);
+}
+
+
+
+/*-----comment-----*/
+.comment-form {
+    width: 80%;
+    margin-left: 142px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-top: 50px;
+    padding: 50px;
+    border: rgb(187, 176, 176) solid 1px;
+    width: 45%;
+    
+    
+}
+
+.comment-form h3 {
     font-size: 24px;
-    color: #f44336;
-}
-
-.input-group {
     margin-bottom: 20px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: calc(100% - 20px);
-    padding: 8px;
+.comment-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.comment-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(240, 230, 230);
 }
 
-textarea {
-    height: 100px;
+.comment-form textarea {
+    height: 150px;
+}
+
+.comment-form input[type="submit"] {
+    display: inline-block;
+    text-decoration: none;
+    color: #f44336;
+    border: 1px solid #f44336;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 200px;
+    align-self: flex-start;
+    
+
+}
+
+.comment-form input[type="submit"]:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.4s;
+    color: #fff;
 }
 
 /*------footer------*/
@@ -250,3 +326,5 @@ textarea {
 .fa-telegram{
     color: #0088CC;
 }
+
+

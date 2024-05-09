@@ -13,7 +13,7 @@ h2{
 {
     min-height: 65vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/eduford_img/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/background.jpg);
     background-position: center;
     position: relative;
 }
@@ -152,48 +152,79 @@ nav .fa
 {
     padding: 30px;
 }
-
-
-
 }
 
-/*-----info----*/
-.info {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
 
-.row {
+/*------map------*/
+.map
+{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 40px;
 }
-
-.info-col {
-    flex-basis: 48%; /* Adjust this value as needed */
+iframe {
+    width: 88%;
+    max-width: 1200px; /* Set a maximum width if needed */
+    height: 450px;
+    border: 2px solid #ccc;
     border-radius: 10px;
-    text-align: left;
-    overflow: hidden;
+    box-shadow: 0 0 10px rgba(211, 139, 139, 0.1);
 }
 
-.info-col img {
-    width: 600px;
-    height: auto;
+
+
+
+/*-------form-------*/
+.container {
+    width: 80%;
+    max-width: 1200;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border-radius: 5px;
 }
 
-h1
-{
-    font-size: 36px;
-    font-weight: 600;
+.contact-row {
+    display: flex;
 }
-p
-{
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+
+.contact-info,
+.contact-form {
+    width: 50%;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #f44336;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
 }
 
 /*------footer------*/
